@@ -20,15 +20,27 @@
  * See the License for the specific language governing premissions and
  * limitations under the License.
  */
-style "CheckBox"
+style "TabControl" = "Default"
 {
 
 }
 
-style "CheckBoxText"
+style "TabControlHeading" = "Default"
 {
 
 }
 
-widget_class "*GtkCheckButton" style "CheckBox"
-widget_class "*GtkCheckButton.<GtkLabel>" style "CheckBoxText"
+style "TabPage" = "Default"
+{
+
+}
+
+style "TabPageHeading" = "Default"
+{
+
+}
+
+class "GimpDockbook" style "TabControl"
+class "GimpDockable" style "TabPage"
+widget_class "*<GimpDockbook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>" style "TabControlHeading"
+widget_class "*<GimpDockable>.<GtkBox>.<GtkLabel>" style "TabPageHeading"

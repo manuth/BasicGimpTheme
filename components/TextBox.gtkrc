@@ -20,27 +20,9 @@
  * See the License for the specific language governing premissions and
  * limitations under the License.
  */
-style "TabControl"
+style "TextBox" = "Default"
 {
 
 }
 
-style "TabControlHeadings"
-{
-
-}
-
-style "TabPage"
-{
-
-}
-
-style "TabPageHeading"
-{
-
-}
-
-class "GimpDockbook" style "TabControl"
-class "GimpDockable" style "TabPage"
-widget_class "*<GimpDockbook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>" style "TabControlHeadings"
-widget_class "*<GimpDockable>.<GtkBox>.<GtkLabel>"
+widget_class "*<GtkEntry>" style "TextBox"

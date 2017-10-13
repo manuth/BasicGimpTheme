@@ -20,7 +20,91 @@
  * See the License for the specific language governing premissions and
  * limitations under the License.
  */
-include "components/CheckBox.sh"
-include "components/ComboBox.sh"
-include "components/Slider.sh"
-include "components/TabControl.sh"
+
+/**
+ * This is a basic template that contains selectors for **every single control existing in GIMP**!
+ * This will make it easy to you to edit GIMPs Look & Feel thoroughly.
+ * If you're not sure how to edit gtkrc-files head over to the gtkrc-documentation:
+ * https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes
+ *
+ * Have a look at the different files included into this file in order to learn how to edit the theme of every single control in GIMP.
+ * Use the "Test"-style in order to try out your own selectors.
+ */
+style "Default"
+{
+    fg[NORMAL] = "blue"
+    fg[PRELIGHT] = "blue"
+    fg[ACTIVE] = "blue"
+    fg[SELECTED] = "blue"
+    fg[INSENSITIVE] = "blue"
+    bg[NORMAL] = "red"
+    bg[PRELIGHT] = "red"
+    bg[ACTIVE] = "red"
+    bg[SELECTED] = "red"
+    bg[INSENSITIVE] = "red"
+    base[NORMAL] = "gold"
+    base[PRELIGHT] = "gold"
+    base[ACTIVE] = "gold"
+    base[SELECTED] = "gold"
+    base[INSENSITIVE] = "gold"
+    text[NORMAL] = "green"
+    text[PRELIGHT] = "green"
+    text[ACTIVE] = "green"
+    text[SELECTED] = "green"
+    text[INSENSITIVE] = "green"
+
+    engine "pixmap"
+    {
+    }
+}
+
+style "Test"
+{
+    fg[NORMAL] = "cyan"
+    fg[PRELIGHT] = "cyan"
+    fg[ACTIVE] = "cyan"
+    fg[SELECTED] = "cyan"
+    fg[INSENSITIVE] = "cyan"
+
+    bg[NORMAL] = "violet"
+    bg[PRELIGHT] = "violet"
+    bg[ACTIVE] = "violet"
+    bg[SELECTED] = "violet"
+    bg[INSENSITIVE] = "violet"
+
+    base[NORMAL] = "orange"
+    base[PRELIGHT] = "orange"
+    base[ACTIVE] = "orange"
+    base[SELECTED] = "orange"
+    base[INSENSITIVE] = "orange"
+
+    text[NORMAL] = "pink"
+    text[PRELIGHT] = "pink"
+    text[ACTIVE] = "pink"
+    text[SELECTED] = "pink"
+    text[INSENSITIVE] = "pink"
+}
+
+widget_class "*" style "Default"
+
+/**
+ * Important
+ * Due to GTK's behaviour the different style-definitions need to be loaded in the correct order.
+ * Please keep following in mind:
+ *
+ * Buttons need to be defined **before** TreeView-Buttons, Combo- and CheckBoxes
+ * TextBoxes need to be defined **before** UpDownBoxes
+ * UpDownBoxes need to be defined **before** Sliders
+ */
+include "components/Button.gtkrc"
+include "components/CheckBox.gtkrc"
+include "components/RadioButton.gtkrc"
+include "components/ComboBox.gtkrc"
+include "components/TextBox.gtkrc"
+include "components/TaggedTextBox.gtkrc"
+include "components/UpDownBox.gtkrc"
+include "components/Slider.gtkrc"
+include "components/TabControl.gtkrc"
+include "components/TreeView.gtkrc"
+include "components/MenuBar.gtkrc"
+include "components/ToolTip.gtkrc"
