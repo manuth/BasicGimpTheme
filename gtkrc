@@ -20,7 +20,7 @@
  * See the License for the specific language governing premissions and
  * limitations under the License.
  */
-include "components/CheckBox"
-include "components/ComboBox"
-include "components/Slider"
-include "components/TabControl"
+include "components/CheckBox.sh"
+include "components/ComboBox.sh"
+include "components/Slider.sh"
+include "components/TabControl.sh"
