@@ -1,7 +1,7 @@
 /**
  * AwesomeDark GIMP Theme
  *
- * Version 0.0.1
+ * Version 1.0.0
  *
  * Copyright © 2017, Manuel Thalmann
  *
@@ -18,15 +18,6 @@
  * limitations under the License.
  */
 
-/**
- * This is a basic template that contains selectors for **every single control existing in GIMP**!
- * This will make it easy to you to edit GIMPs Look & Feel thoroughly.
- * If you're not sure how to edit gtkrc-files head over to the gtkrc-documentation:
- * https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes
- *
- * Have a look at the different files included into this file in order to learn how to edit the theme of every single control in GIMP.
- * Use the "Test"-style in order to try out your own selectors.
- */
 style "Default"
 {
     fg[NORMAL] = "blue"
@@ -84,15 +75,6 @@ style "Test"
 
 widget_class "*" style "Default"
 
-/**
- * Important
- * Due to GTK's behaviour the different style-definitions need to be loaded in the correct order.
- * Please keep following in mind:
- *
- * Buttons need to be defined **before** TreeView-Buttons, Combo- and CheckBoxes
- * TextBoxes need to be defined **before** UpDownBoxes
- * UpDownBoxes need to be defined **before** Sliders
- */
 include "components/Button.gtkrc"
 include "components/CheckBox.gtkrc"
 include "components/RadioButton.gtkrc"
