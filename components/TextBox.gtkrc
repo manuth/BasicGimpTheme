@@ -19,7 +19,6 @@
  */
 style "TextBox" = "Default"
 {
-
 }
 
 widget_class "*<GtkEntry>" style "TextBox"

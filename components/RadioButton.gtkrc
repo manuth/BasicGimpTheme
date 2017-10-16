@@ -19,12 +19,10 @@
  */
 style "CheckBox" = "Default"
 {
-
 }
 
 style "CheckBoxText" = "Default"
 {
-
 }
 
 widget_class "*GtkRadioButton" style "CheckBox"

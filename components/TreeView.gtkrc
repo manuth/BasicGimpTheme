@@ -19,12 +19,10 @@
  */
 style "TreeView" = "Default"
 {
-
 }
 
 style "TreeViewHeadings" = "Default"
 {
-
 }
 
 widget_class "*<GtkTreeView>" style "TreeView"

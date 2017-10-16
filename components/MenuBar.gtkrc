@@ -19,13 +19,14 @@
  */
 style "MenuBar" = "Default"
 {
-
 }
 
 style "MenuItem" = "Default"
 {
-
 }
+
+style "MenuItemText" = "Default"
 
 widget_class "*<GtkMenuBar>" style "MenuBar"
 widget_class "*<GtkMenuItem>" style "MenuItem"
+widget_class "*<GtkMenuItem>*<GtkLabel>" style "MenuItemText"

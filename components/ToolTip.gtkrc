@@ -19,7 +19,6 @@
  */
 style "ToolTip" = "Default"
 {
-
 }
 
 widget "gtk-tooltip*" style "ToolTip"

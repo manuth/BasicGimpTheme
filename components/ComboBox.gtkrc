@@ -19,22 +19,18 @@
  */
 style "ComboBox" = "Default"
 {
-
 }
 
 style "ComboBoxText" = "Default"
 {
-
 }
 
 style "ComboBoxArrow" = "Default"
 {
-
 }
 
 style "ComboBoxMenu" = "Default"
 {
-
 }
 
 widget_class "*<GtkComboBox>.<GtkToggleButton>" style "ComboBox"

@@ -19,7 +19,6 @@
  */
 style "TaggedTextBox" = "Default"
 {
-
 }
 
 widget_class "*<GimpComboTagEntry>" style "TaggedTextBox"

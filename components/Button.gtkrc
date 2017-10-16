@@ -23,7 +23,6 @@ style "Button" = "Default"
 
 style "ButtonText" = "Default"
 {
-
 }
 
 widget_class "*<GtkButton>" style "Button"

@@ -19,22 +19,18 @@
  */
 style "TabControl" = "Default"
 {
-
 }
 
 style "TabControlHeading" = "Default"
 {
-
 }
 
 style "TabPage" = "Default"
 {
-
 }
 
 style "TabPageHeading" = "Default"
 {
-
 }
 
 class "GimpDockbook" style "TabControl"
